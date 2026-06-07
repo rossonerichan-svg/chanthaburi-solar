@@ -68,6 +68,7 @@ function initSpotlightEffect() {
  */
 function initCalculator() {
     const billRange = document.getElementById('billRange');
+    if (!billRange) return;
     const billNumber = document.getElementById('billNumber');
     const profileBtns = document.querySelectorAll('.profile-btn');
     
@@ -315,7 +316,7 @@ function initContactModal() {
             const clientName = document.getElementById('clientName').value;
             const clientPhone = document.getElementById('clientPhone').value;
             const clientLocation = document.getElementById('clientLocation').value;
-            const estBill = estBillText.value;
+            const estBill = estBillText ? estBillText.value : '';
             const notes = document.getElementById('notes').value;
             
             console.log('Lead registration captured:', {

@@ -90,13 +90,12 @@
                 <ul>
                     <li><a href="#hero">หน้าแรก</a></li>
                     <li><a href="#problems-solutions">ทำไมต้องจันทบุรี</a></li>
-                    <li><a href="#roi-calculator">เครื่องคำนวณค่าไฟ</a></li>
                     <li><a href="#testimonials">รีวิวจากลูกค้า</a></li>
                 </ul>
             </nav>
             
             <div class="header-actions">
-                <a href="#roi-calculator" class="btn btn-primary btn-sm">ประเมินค่าไฟฟรี</a>
+                <a href="#" class="btn btn-primary btn-sm open-survey-modal">จองคิวสำรวจฟรี</a>
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
                     <span></span>
                     <span></span>
@@ -120,7 +119,7 @@
                     บริการรับติดตั้งโซล่าเซลล์ จันทบุรี เกรดพรีเมียม (Tier-1) แผง Double-Glass ทนฝนชุกและลมมรสุม ออกแบบเฉพาะสำหรับสวนทุเรียน ห้องเย็น และบ้านพักอาศัยหรู พร้อมสิทธิ์ลดหย่อนภาษีโซล่าเซลล์ 2569 สูงสุด 200,000 บาท (ออก e-Tax Invoice ได้ 100%)
                 </p>
                 <div class="hero-actions-group">
-                    <a href="#roi-calculator" class="btn btn-primary btn-lg">ประเมินค่าไฟฟรีใน 1 นาที</a>
+                    <button class="btn btn-primary btn-lg open-survey-modal">ปรึกษาผู้เชี่ยวชาญ</button>
                 </div>
                 
                 <!-- Trust Badging overlay -->
@@ -152,7 +151,7 @@
                 <h3>ติดตั้งโซล่าเซลล์ลดหย่อนภาษี 2569 ได้สูงสุด 200,000 บาท</h3>
                 <p>บริษัท จันทบุรีโทรทัศน์บริการ จำกัด เป็นผู้ประกอบการจดทะเบียนพร้อมออกใบกำกับภาษีอิเล็กทรอนิกส์ <strong>(e-Tax Invoice)</strong> เพื่อใช้สิทธิ์หักลดหย่อนภาษีเงินได้บุคคลธรรมดาได้สูงสุด 200,000 บาท ตามมาตรการรัฐ (วันนี้ - 31 ธ.ค. 2571)</p>
             </div>
-            <a href="#roi-calculator" class="btn btn-primary btn-sm">คำนวณจุดคุ้มทุนคลิก</a>
+            <a href="#" class="btn btn-primary btn-sm open-survey-modal">จองคิวสำรวจฟรี</a>
         </div>
     </div>
 
@@ -338,111 +337,7 @@
             </div>
         </div>
     </section>
-    <!-- Interactive Solar ROI Calculator Section -->
-    <section class="roi-calculator" id="roi-calculator">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">เครื่องคำนวณการลงทุนโซลาร์เซลล์ (ROI Calculator)</h2>
-                <p class="section-subtitle">วิเคราะห์ขนาดระบบที่เหมาะสมและประเมินยอดเงินประหยัดสำหรับสวน บ้าน หรือธุรกิจของคุณในคลิกเดียว</p>
-            </div>
-            
-            <div class="calculator-grid">
-                <!-- Inputs Form -->
-                <div class="calculator-card calc-inputs">
-                    <h3 class="card-section-title">1. ข้อมูลการใช้พลังงาน</h3>
-                    
-                    <!-- Step 1: Profile Selection -->
-                    <div class="input-group">
-                        <label class="input-label">ประเภทอสังหาริมทรัพย์ / การใช้งาน</label>
-                        <div class="profile-selector">
-                            <button class="profile-btn active" data-profile="residential">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                                    <polyline points="9 22 9 12 15 12 15 22"/>
-                                </svg>
-                                <span>บ้านพักอาศัย</span>
-                            </button>
-                            <button class="profile-btn" data-profile="orchard">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
-                                    <path d="M12 6v12M6 12h12"/>
-                                </svg>
-                                <span>สวนผลไม้ / สวนทุเรียน</span>
-                            </button>
-                            <button class="profile-btn" data-profile="business">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                                </svg>
-                                <span>ล้ง / ห้องเย็น / ธุรกิจ</span>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <!-- Step 2: Bill Amount -->
-                    <div class="input-group">
-                        <div class="label-with-value">
-                            <label class="input-label" for="billRange">ค่าไฟฟ้าเฉลี่ยต่อเดือน (บาท)</label>
-                            <div class="numeric-input-wrapper">
-                                <input type="number" id="billNumber" value="12000" min="3000" max="250000" step="500">
-                                <span class="currency-unit">THB</span>
-                            </div>
-                        </div>
-                        <input type="range" id="billRange" min="3000" max="150000" value="12000" step="500" class="range-slider">
-                        <div class="slider-limits">
-                            <span>3,000 บาท</span>
-                            <span>150,000+ บาท</span>
-                        </div>
-                    </div>
 
-                    <!-- Callout explaining assumptions -->
-                    <div class="calculator-info">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-                        <p>การคำนวณเบื้องต้นนี้อ้างอิงจากปริมาณความเข้มแสงอาทิตย์เฉลี่ยของจันทบุรี และอัตราค่าไฟฟ้าประเภท TOU (Time of Use) ปรับปรุงล่าสุดปี 2026</p>
-                    </div>
-                </div>
-                
-                <!-- Outputs / Results -->
-                <div class="calculator-card calc-outputs">
-                    <h3 class="card-section-title">2. การวิเคราะห์ความคุ้มค่า</h3>
-                    
-                    <div class="results-grid">
-                        <div class="result-card primary-result">
-                            <span class="result-label">ขนาดระบบที่แนะนำ</span>
-                            <div class="result-value" id="systemSize">5.5 <span class="unit">kWp</span></div>
-                            <span class="result-desc">ครอบคลุมการใช้งานช่วงกลางวันเป็นหลัก</span>
-                        </div>
-                        
-                        <div class="result-card">
-                            <span class="result-label">ประหยัดเฉลี่ยต่อเดือน</span>
-                            <div class="result-value text-accent" id="monthlySavings">3,600 <span class="unit">บาท</span></div>
-                            <span class="result-desc">หรือประมาณ <span id="yearlySavings">43,200</span> บาทต่อปี</span>
-                        </div>
-                        
-                        <div class="result-card">
-                            <span class="result-label">ระยะเวลาคืนทุนโดยประมาณ</span>
-                            <div class="result-value text-green" id="paybackPeriod">4.8 <span class="unit">ปี</span></div>
-                            <span class="result-desc">รับผลกำไรเป็นค่าไฟฟรีต่อเนื่องอีก 20 ปี+</span>
-                        </div>
-
-                        <div class="result-card col-span-2 highlight-result">
-                            <span class="result-label">ยอดเงินประหยัดสะสมตลอดอายุการใช้งาน 25 ปี</span>
-                            <div class="result-value" id="lifetimeSavings">1.08 <span class="unit">ล้านบาท</span></div>
-                        </div>
-
-                        <div class="result-card col-span-2 carbon-result">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                            </svg>
-                            <span>ลดการปล่อยก๊าซคาร์บอนไดออกไซด์ได้เฉลี่ย <strong id="carbonOffset">4.2</strong> ตันต่อปี เทียบเท่าการปลูกต้นไม้ <strong id="treesPlanted">420</strong> ต้น</span>
-                        </div>
-                    </div>
-                    
-                    <button class="btn btn-primary btn-block" id="calcCtaBtn">รับใบเสนอราคาและการออกแบบ 3D ฟรี</button>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Pricing Packages Section -->
     <section class="pricing-packages" id="pricing">
@@ -783,10 +678,7 @@
                         <label class="form-label" for="clientLocation">อำเภอ / สถานที่ติดตั้ง (จันทบุรี)</label>
                         <input type="text" id="clientLocation" class="form-control" placeholder="เช่น อ.มะขาม หรือ อ.เมืองจันทบุรี" required>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="estBill">ค่าไฟประเมินต่อเดือน (บาท)</label>
-                        <input type="text" id="estBillText" class="form-control" readonly>
-                    </div>
+
                     <div class="form-group">
                         <label class="form-label" for="notes">ข้อความเพิ่มเติม (ถ้ามี)</label>
                         <textarea id="notes" class="form-control" rows="3" placeholder="ระบุวันเวลาที่สะดวกให้เข้าไปสำรวจ หรือพิกัดสวน/ล้งทุเรียนที่ต้องการให้ตรวจสอบ"></textarea>
@@ -836,7 +728,6 @@
                 <ul>
                     <li><a href="#hero">หน้าแรก</a></li>
                     <li><a href="#problems-solutions">ทำไมต้องเป็นจันทบุรี</a></li>
-                    <li><a href="#roi-calculator">คำนวณสิทธิ์จุดคุ้มทุน</a></li>
                     <li><a href="#testimonials">รีวิวจากความประทับใจจริง</a></li>
                     <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
                 </ul>
